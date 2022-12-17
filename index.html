@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Snake Xenxia</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="scores">
+        
+            <h3>High Scores: <span class="high-scores">0</span></h3>
+            <h3>Score: <span class="score">0</span></h3>
+        </div>
+        
+        <canvas id="snakeCanvas" width="400" height="400"></canvas>
+        <div class="controls">
+            <button class="btn btn-control btn-top"><</button>
+            <button class="btn btn-control btn-right">></button>
+            <button class="btn btn-control btn-bottom">></button>
+            <button class="btn btn-control btn-left"><</button>
+        </div>
+        <button class="btn btn-start" onclick="starter()">Start Game</button>
+        <div class="game-over">
+            <button  class="btn btn-restart">Restart</button>
+            <h2 >Game Over</h2>
+        </div>
+    </div>
+   
+    <script src="app.js"></script>
+</body>
+</html>

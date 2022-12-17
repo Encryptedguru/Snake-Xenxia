@@ -1,0 +1,143 @@
+@import "reset";
+
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.high-scores {
+  color: limegreen;
+}
+
+.score {
+  color: dodgerblue;
+}
+
+canvas {
+
+  box-shadow: 2px 1px 5px 2px rgba(0, 0, 0, .7);
+}
+
+
+
+.game-over {
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 400px;
+  width: 400px;
+  background-color: rgba(0, 0, 0, .5);
+
+  h2 {
+    font-style: italic;
+    color: #fff;
+    margin-top: 5px;
+  }
+}
+.btn {
+  padding: .5rem 1rem;
+  box-shadow: 2px 1px 5px 3px rgba(0, 0, 0, .3);
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;  
+  border: none;
+
+  &:active {
+    transform: scale(.98);
+  }
+  &:visited {
+    background-color: green;
+  }
+}
+
+
+
+
+.container {
+  border: 2px solid red;
+  width: 405px;
+  margin: 0 auto;
+  position: relative;
+
+  .scores {
+    position: absolute;
+    top:  -50px;
+    right: 70px;
+
+  }
+
+  .controls {
+    
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    min-height: 50px;
+    max-height: 70px;
+
+
+  }
+
+  .btn-restart {
+     text-transform: uppercase;
+     font-weight: 600;
+     font-style: italic;
+     background-image: linear-gradient(45deg, dodgerblue, lime);
+     background-clip: text;
+     -webkit-text-fill-color: transparent;
+  }
+
+  .btn-start {
+    position: absolute;
+    top: -40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-image: linear-gradient(45deg, green, dodgerblue);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+  }
+
+  .btn-control {
+    position: absolute;
+    font-weight: 900;
+    font-style: bold;
+        
+  }
+  .btn-top {
+    top: -5%;
+    left: 50%;
+  }
+
+  .btn-left {
+    top: 50%;
+    left: 20%;
+  }
+  .btn-right {
+    top: 50%;
+    right: 7%;
+  }
+  .btn-bottom {
+    bottom: -60%;
+    left: 50%;
+    
+  }
+
+  .btn-top, .btn-bottom {
+    transform: rotate(90deg);
+    padding: 0;
+    padding: 1rem .5rem;
+  }
+}
